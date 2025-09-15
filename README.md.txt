@@ -98,10 +98,10 @@ Scatter plots: Popularity vs. danceability, energy, valence, acousticness, instr
 Heatmap: Shows all pairwise correlations between features and popularity.
 
 ### 🔹 Correlation Heatmap
-![Heatmap of audio features vs popularity]("C:\Users\Patrice Davis\Desktop\Projects\Music_Streaming_Analytics\visualizations\Audio Features vs Popularity Heatmaps.png")
+![Heatmap of audio features vs popularity]("https://github.com/pdavis99/music-streaming-analytics/blob/main/visualizations/Audio%20Features%20vs%20Popularity%20Heatmaps.png")
 
 ### 🔹 Danceability vs Popularity
-![Scatter plot of danceability vs popularity]("C:\Users\Patrice Davis\Desktop\Projects\Music_Streaming_Analytics\visualizations\Audio Features vs Popularity Scatter Plots.png")
+![Scatter plot of danceability vs popularity]("https://github.com/pdavis99/music-streaming-analytics/blob/main/visualizations/Audio%20Features%20vs%20Popularity%20Scatter%20Plots.png")
 
 ### 📝Findings & Summary 
 
