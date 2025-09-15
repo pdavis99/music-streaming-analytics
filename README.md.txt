@@ -7,7 +7,7 @@ The dataset was cleaned and analyzed using both **Python (Pandas + SQLAlchemy)**
 ---
 
 ## ⚙️ Tools & Technologies
-- **Python** (data cleaning and visualization, Pandas, SQLAlchemy, Seaborn, Matplotlib)  
+- **Python** (data cleaning and visualization: Pandas, SQLAlchemy, Seaborn, Matplotlib)  
 - **PostgreSQL** (data storage & querying)  
 - **SQL** (data cleaning and analysis)  
 
@@ -32,7 +32,6 @@ The dataset was cleaned and analyzed using both **Python (Pandas + SQLAlchemy)**
 ### 🔹 SQL Scripts
 All SQL queries used for data cleaning, deduplication, and summarization are stored in the `sql/` folder.  
 These scripts can be run to reproduce the cleaned dataset (`tracks_cleaned`) used for analysis.
-
 
 ### 🔹 Cleaning in Python
 1. **Loaded dataset into PostgreSQL** using SQLAlchemy.  
@@ -63,14 +62,12 @@ These scripts can be run to reproduce the cleaned dataset (`tracks_cleaned`) use
 
 ## 🔍 Popularity Analysis
 **Question:** What makes a song popular?  
-- Compare `danceability`, `energy`, and `valence` with popularity scores.  
-- Identify audio features most correlated with popularity.  
 
-We analyzed audio features such as danceability, energy, valence, acousticness, instrumentalness, and tempo to see how they relate to popularity.
+We analyzed audio features such as danceability, energy, valence, acousticness, instrumentalness, and tempo to see how they relate to popularity.  
 
-Correlation analysis was performed in Python (pandas).
+Correlation analysis was performed in Python (pandas).  
 
-🔹 Correlation with Popularity
+### 🔹 Correlation with Popularity
 
 | Feature          | Correlation with Popularity | Interpretation |
 |------------------|-----------------------------|----------------|
@@ -81,21 +78,18 @@ Correlation analysis was performed in Python (pandas).
 | Valence          | -0.041                      | Very weak negative effect |
 | Instrumentalness | -0.095                      | Instrumental tracks tend to be less popular |
 
-### Key Takeaways:
+---
 
-Instrumental content is the strongest (though still small) predictor of lower popularity.
+## 📌 Key Takeaways
+- Instrumental content is the strongest (though still small) predictor of **lower popularity**.  
+- Danceable songs have a **tiny positive influence** on popularity.  
+- Overall, **audio features alone explain very little** of popularity; other factors like artist reputation, marketing, or cultural trends likely play a larger role.  
 
-Danceable songs have a tiny positive influence on popularity.
+---
 
-Overall, audio features alone explain very little of popularity; other factors like artist, marketing, or trends likely play a larger role.
-
-### 🔹 Visualizations
-
-Scatter plots and heatmaps were generated to explore these relationships visually:
-
-Scatter plots: Popularity vs. danceability, energy, valence, acousticness, instrumentalness, and tempo.
-
-Heatmap: Shows all pairwise correlations between features and popularity.
+## 📊 Visualizations
+Scatter plots and heatmaps were generated to explore these relationships visually.  
+🔹 All plots are saved in the `visualizations/` folder and displayed below.  
 
 ### 🔹 Correlation Heatmap
 ![Heatmap of audio features vs popularity](visualizations/Audio_Features_vs_Popularity_Heatmaps.png)
@@ -103,10 +97,14 @@ Heatmap: Shows all pairwise correlations between features and popularity.
 ### 🔹 Danceability vs Popularity
 ![Scatter plot of danceability vs popularity](visualizations/Audio_Features_vs_Popularity_Scatter_Plots.png)
 
-### 📝Findings & Summary 
+---
 
-Based on our visualizations and statistical analysis, we found no strong linear relationship between any of the audio features and a song's popularity.
+## 📝 Findings & Summary 
+- **Scatter Plots:** The scatter plots showed a random distribution of points. For every audio feature, songs with low, medium, and high popularity scores were present across the entire range of the feature's values. There was no visible upward or downward trend.  
+- **Correlation Heatmap:** The heatmap confirmed the visual findings. Correlation coefficients between all audio features and popularity were very close to zero, ranging from **-0.10 to 0.04**.  
 
-Scatter Plots: The scatter plots showed a random distribution of points. For every audio feature, songs with low, medium, and high popularity scores were present across the entire range of the feature's values. There was no visible upward or downward trend.
+👉 For example, the correlation between *danceability* and *popularity* was only **0.04**, suggesting that a song's danceability score is not a reliable predictor of its popularity.  
 
-Correlation Heatmap: The heatmap confirmed the visual findings. The correlation coefficients between all audio features and popularity were very close to zero, ranging from -0.10 to 0.04. This indicates a weak to non-existent linear correlation. For example, the correlation between "danceability" and "popularity" was only 0.04, suggesting that a song's danceability score is not a reliable predictor of its popularity.
+---
+
+## 📂 Repository Structure
