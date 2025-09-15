@@ -92,7 +92,7 @@ Scatter plots and heatmaps were generated to explore these relationships visuall
 🔹 All plots are saved in the `visualizations/` folder and displayed below.  
 
 ### 🔹 Correlation Heatmap
-![Heatmap of audio features vs popularity]("https://github.com/pdavis99/music-streaming-analytics/blob/main/visualizations/Audio%20Features%20vs%20Popularity%20Heatmaps.png")
+![Heatmap of audio features vs popularity](https://github.com/pdavis99/music-streaming-analytics/blob/main/visualizations/Audio%20Features%20vs%20Popularity%20Heatmaps.png)
 
 ### 🔹 Danceability vs Popularity
 ![Scatter plot of danceability vs popularity](visualizations/Audio_Features_vs_Popularity_Scatter_Plots.png)
