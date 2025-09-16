@@ -28,9 +28,8 @@ Follow these steps to set up and explore the **Music Streaming Analytics** proje
 
 ### 1. Clone the Repository
 
-```bash
-git clone https://github.com/pdavis99/music-streaming-analytics.git
-cd music-streaming-analytics
+`git clone https://github.com/pdavis99/music-streaming-analytics.git`
+`cd music-streaming-analytics`
 
 2. Install Dependencies
 
