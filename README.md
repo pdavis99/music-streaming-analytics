@@ -175,9 +175,7 @@ Scatter plots and heatmaps were generated to explore these relationships visuall
 
 ### 🔹 Danceability vs Popularity
 
-
-![Danceability vs Popularity](visualizations/Audio_Features_scatterplot.png)
-
+!\[Scatter plot of danceability vs popularity](visualizations/Audio_Features_scatterplot.png)
 
 
 
