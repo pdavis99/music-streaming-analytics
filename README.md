@@ -87,23 +87,14 @@ These scripts can be run to reproduce the cleaned dataset (`tracks\_cleaned`) us
 
 
 ### 🔹 Summary Statistics (after cleaning)
-
-| Metric              | Value   |
-
-|----------------------|---------|
-
-| **Total tracks**     | 81,201  |
-
-| **Avg popularity**   | 34.7    |
-
-| **Popularity stdev** | 19.3    |
-
-| **Avg danceability** | 0.56    |
-
-| **Avg energy**       | 0.64    |
-
-| **Avg valence**      | 0.46    |
-
+| Metric              | Value  |
+|--------------------|--------|
+| **Total tracks**     | 81,201 |
+| **Avg popularity**   | 34.7   |
+| **Popularity stdev** | 19.3   |
+| **Avg danceability** | 0.56   |
+| **Avg energy**       | 0.64   |
+| **Avg valence**      | 0.46   |
 
 
 \- **Popularity range:** 0 – 100 (valid, no errors found).  
@@ -138,21 +129,15 @@ Correlation analysis was performed in Python (pandas).
 
 
 
-| Feature          | Correlation with Popularity | Interpretation |
+| Feature          | Correlation with Popularity | Interpretation                        |
+|------------------|----------------------------|--------------------------------------|
+| Danceability     | 0.035                      | Slight positive effect                |
+| Tempo            | 0.013                      | Almost no effect                      |
+| Energy           | 0.001                      | No meaningful relationship            |
+| Acousticness     | -0.025                     | Slight negative effect                |
+| Valence          | -0.041                     | Very weak negative effect             |
+| Instrumentalness | -0.095                     | Instrumental tracks tend to be less popular |
 
-|------------------|-----------------------------|----------------|
-
-| Danceability     | 0.035                       | Slight positive effect |
-
-| Tempo            | 0.013                       | Almost no effect |
-
-| Energy           | 0.001                       | No meaningful relationship |
-
-| Acousticness     | -0.025                      | Slight negative effect |
-
-| Valence          | -0.041                      | Very weak negative effect |
-
-| Instrumentalness | -0.095                      | Instrumental tracks tend to be less popular |
 
 
 
