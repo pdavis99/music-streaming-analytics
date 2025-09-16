@@ -20,7 +20,36 @@ The dataset was cleaned and analyzed using both **Python (Pandas + SQLAlchemy)**
 
 \- **SQL** (data cleaning and analysis)  
 
+--- 
 
+## Getting Started
+
+Follow these steps to set up and explore the **Music Streaming Analytics** project locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/pdavis99/music-streaming-analytics.git
+cd music-streaming-analytics
+
+2. Install Dependencies
+
+Make sure you have Python 3.8+ installed, then install the required packages:
+
+`pip install -r requirements.txt`
+
+3. Set Up Spotify API Credentials
+
+Create a .env file in the project root and add your Spotify credentials:
+
+SPOTIPY_CLIENT_ID=your_spotify_client_id
+SPOTIPY_CLIENT_SECRET=your_spotify_client_secret
+SPOTIPY_REDIRECT_URI=http://localhost:8888/callback
+
+4. Run the Application
+
+Start the app with:
+`python app.py`
 
 ---
 
